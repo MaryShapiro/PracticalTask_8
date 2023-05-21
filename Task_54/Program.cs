@@ -14,16 +14,15 @@ Console.Clear();
 
 int[,] GetArray(int m, int n, int min, int max)
 {
-    int[,] mass = new int[m, n];
+    int[,] array = new int[m, n];
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
-            mass[i, j] = new Random().Next(min, max + 1);
-
+            array[i, j] = new Random().Next(min, max + 1);
         }
     }
-    return mass;
+    return array;
 }
 
 void PrintArray(int[,] array)
